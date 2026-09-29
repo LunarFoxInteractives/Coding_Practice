@@ -22,6 +22,7 @@ namespace Intro
             
             Console.WriteLine("Hello, " + name + "!");
             Console.WriteLine("This is my First C# Program");
+
             Console.WriteLine();
 
             Console.WriteLine("=================================");
@@ -32,8 +33,6 @@ namespace Intro
             if (Rating <= 5)
             {
                 Console.WriteLine($"You Rated it {Rating} out of 10. We will try to improve it.");
-
-
             }
 
             else
