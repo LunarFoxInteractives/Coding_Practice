@@ -1,20 +1,34 @@
 using System;
 
-class Program
+namespace BasicSyntax
 {
-	static void Main()
-	{
-		Console.Write("Enter your name: ");
-		string name = Console.ReadLine();
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, C#!");
 
-		Console.Write("Enter your age: ");
-		string age = Console.ReadLine();
+            int number = 42;
+            string name = "Alice";
+            bool isReady = true;
 
-		Console.Write("Enter your school: ");
-		string school = Console.ReadLine();
+            Console.WriteLine($"Name: {name}");
+            Console.WriteLine($"Number: {number}");
+            Console.WriteLine($"Ready: {isReady}");
 
-		Console.WriteLine($"Name: {name}");
-		Console.WriteLine($"Age: {age}");
-		Console.WriteLine($"School: {school}");
-	}
+            if (number > 10)
+            {
+                Console.WriteLine("The number is greater than 10.");
+            }
+            else
+            {
+                Console.WriteLine("The number is 10 or less.");
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine($"Loop iteration: {i}");
+            }
+        }
+    }
 }
